@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>basic</h1>
+    <main>
+        <section class="game-shell">
+            <header class="game-header">
+                <div>
+                    <p class="eyebrow">Classic Arcade</p>
+                    <h1>Snake Game</h1>
+                </div>
+                <p class="subtitle">Eat the food, avoid collisions, and chase a new high score.</p>
+            </header>
+
+            <div class="status-panel">
+                <div class="infos">
+                    <div class="info-card">
+                        <span class="label">Score</span>
+                        <strong class="score">00</strong>
+                    </div>
+                    <div class="info-card">
+                        <span class="label">High Score</span>
+                        <strong class="high-score">0</strong>
+                    </div>
+                    <div class="info-card">
+                        <span class="label">Time</span>
+                        <strong class="time">00</strong>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button id="startBtn" class="control-btn">Start</button>
+                    <button id="pauseBtn" class="control-btn">Pause</button>
+                    <button id="restartBtn" class="control-btn secondary">Restart</button>
+                </div>
+            </div>
+
+            <div class="board-wrapper">
+                <div class="board"></div>
+            </div>
+
+            <div class="hints">
+                <p>Use Arrow keys or WASD to move. Press <strong>Space</strong> to start, <strong>P</strong> to pause, <strong>R</strong> to restart.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
